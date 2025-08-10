@@ -267,18 +267,7 @@ TRANSACTIONID  ACCOUNTID TDATE         AMOUNT TRANSACTIONTYPE
           208        108 11-APR-21        500 DEPOSITE                                                                                                                                                  
 
 SQL> -- WRITE A QUERY THAT WILL CUSTOMERS WHOSE ACCOUNT TYPE IS EITHER SAVING OR CURRENT
-SQL> 
-SQL> SELECT * FROM CUSTOMERS
-  2  WHERE
-  3  CUSTOMERID IN (SELECT CUSTOMERID FROM ACCOUNTS WHERE ACCOUNTYPE IN('SAVING','CURRRENT');
-CUSTOMERID IN (SELECT CUSTOMERID FROM ACCOUNTS WHERE ACCOUNTYPE IN('SAVING','CURRRENT')
-                                                                                      *
-ERROR at line 3:
-ORA-00907: missing right parenthesis 
-
-
 SQL> ED
-Wrote file afiedt.buf
 
   1  SELECT * FROM CUSTOMERS
   2  WHERE
